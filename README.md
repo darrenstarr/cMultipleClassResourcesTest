@@ -75,3 +75,5 @@ instance of BasicTest2 as $cTestResource2Ref {
 ### Thoughts?
 I experimented a little this morning with the DSC local configuration manager debug mode to try and force reload modules. I have tried changing this back and have had no positive results.
 
+### Resolution?
+The solution seems to be to have only a single PSD1 and PSM1 file. So I combine everything into a single file and rename all the PSM1 files to PS1 and alter the merge script to use the changed filenames.
